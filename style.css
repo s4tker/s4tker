@@ -1,0 +1,168 @@
+:root {
+    --ColorFondo: #F8F9FA;
+    --ColorTexto: #1A1A1A;
+    --ColorTarjeta: #FFFFFF;
+    --ColorBorde: #E0E0E0;
+    --ColorSubtitulo: #6200EA;
+}
+
+[data-theme="Dark"] {
+    --ColorFondo: #0A0A0C;
+    --ColorTexto: #F0F0F0;
+    --ColorTarjeta: #121214;
+    --ColorBorde: #252525;
+    --ColorSubtitulo: #00D1FF;
+}
+
+.CuerpoPagina {
+    background-color: var(--ColorFondo);
+    color: var(--ColorTexto);
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    transition: background 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.BarraNavegacion {
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.ContenedorAlternador {
+    cursor: pointer;
+    font-size: 1.4rem;
+}
+
+.EncabezadoPrincipal {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 0 20px;
+}
+
+.ContenedorFoto {
+    width: 130px;
+    height: 130px;
+    margin: 0 auto 25px auto;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #8A2BE2;
+    box-shadow: 0 0 25px rgba(138, 43, 226, 0.5);
+}
+
+.FotoPerfil {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.NombreUsuario {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 5rem;
+    margin: 0;
+    letter-spacing: 3px;
+    line-height: 1;
+}
+
+.SubtituloProfesional {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--ColorSubtitulo);
+    margin: 10px 0 25px 0;
+    letter-spacing: 4px;
+}
+
+.TextoExtra {
+    opacity: 0.8;
+    font-size: 1rem;
+    max-width: 800px;
+    line-height: 1.7;
+    margin: 0 auto 30px auto;
+}
+
+.ContenedorTecnologias {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    font-size: 2.5rem;
+}
+
+.ContenedorTecnologias a {
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.ContenedorTecnologias a:hover {
+    transform: scale(1.2);
+}
+
+.python-color { color: #3776AB; }
+.flask-color { color: #A8A8A8; }
+.html-color { color: #E34F26; }
+.css-color { color: #1572B6; }
+.js-color { color: #F7DF1E; }
+.mysql-color { color: #4479A1; }
+.git-color { color: #F05032; }
+.linux-color { color: #333333; }
+[data-theme="Dark"] .linux-color { color: #FFFFFF; }
+
+.CuadriculaPrincipal {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1100px;
+    width: 90%;
+    padding-bottom: 80px;
+}
+
+.TarjetaEnlace {
+    background-color: var(--ColorTarjeta);
+    border: 3px solid var(--ColorBorde);
+    text-decoration: none;
+    color: inherit;
+    border-radius: 18px;
+    padding: 35px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.TarjetaEnlace:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+.card-github:hover { border-color: #6e5494; border-width: 5px; }
+.card-linkedin:hover { border-color: #0077b5; border-width: 5px; }
+.card-excel:hover { border-color: #1D6F42; border-width: 5px; }
+.card-twitter:hover { border-color: #1DA1F2; border-width: 5px; }
+.card-instagram:hover { border-color: #E4405F; border-width: 5px; }
+.card-mail:hover { border-color: #EA4335; border-width: 5px; }
+
+.CabeceraTarjeta {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.IconoRed { font-size: 2rem; }
+
+.github-brand { color: #6e5494; }
+.linkedin-brand { color: #0077b5; }
+.excel-brand { color: #1D6F42; }
+.twitter-brand { color: #1DA1F2; }
+.instagram-brand { color: #E4405F; }
+.mail-brand { color: #EA4335; }
+
+.TituloTarjeta { margin: 0; font-size: 1.3rem; font-weight: 700; }
+.DescripcionTarjeta { opacity: 0.7; font-size: 0.9rem; line-height: 1.5; }
+
+@media (max-width: 900px) { .CuadriculaPrincipal { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { .CuadriculaPrincipal { grid-template-columns: 1fr; } }
