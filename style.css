@@ -1,25 +1,33 @@
 :root {
-    --ColorFondo: #4444;
-    --ColorTexto: #1A1A1A;
+    --ColorFondo: #F4F7FB;
+    --ColorFondoSecundario: #E9EEF6;
+    --ColorTexto: #171A21;
     --ColorTarjeta: #FFFFFF;
-    --ColorBorde: #E0E0E0;
-    --ColorSubtitulo: #6200EA;
+    --ColorBorde: #D9E1EC;
+    --ColorSubtitulo: #5C35D5;
+    --ColorSombra: rgba(26, 31, 44, 0.16);
+    --ColorBrillo: rgba(92, 53, 213, 0.18);
 }
 
 [data-theme="Dark"] {
-    --ColorFondo: #0A0A0C;
-    --ColorTexto: #F0F0F0;
-    --ColorTarjeta: #121214;
-    --ColorBorde: #252525;
-    --ColorSubtitulo: #00D1FF;
+    --ColorFondo: #181A22;
+    --ColorFondoSecundario: #202432;
+    --ColorTexto: #F3F6FA;
+    --ColorTarjeta: #222531;
+    --ColorBorde: #353A4A;
+    --ColorSubtitulo: #6DE3FF;
+    --ColorSombra: rgba(0, 0, 0, 0.28);
+    --ColorBrillo: rgba(109, 227, 255, 0.16);
 }
 
 .CuerpoPagina {
-    background-color: var(--ColorFondo);
+    background:
+        radial-gradient(circle at top left, var(--ColorBrillo), transparent 32rem),
+        linear-gradient(135deg, var(--ColorFondo), var(--ColorFondoSecundario));
     color: var(--ColorTexto);
     margin: 0;
     font-family: 'Inter', sans-serif;
-    transition: background 0.4s ease;
+    transition: background 0.4s ease, color 0.4s ease;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -39,6 +47,20 @@
 .ContenedorAlternador {
     cursor: pointer;
     font-size: 1.4rem;
+    width: 44px;
+    height: 44px;
+    display: grid;
+    place-items: center;
+    border: 2px solid var(--ColorBorde);
+    border-radius: 50%;
+    background-color: var(--ColorTarjeta);
+    box-shadow: 0 8px 22px var(--ColorSombra);
+    transition: transform 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.ContenedorAlternador:hover {
+    transform: translateY(-3px) rotate(8deg);
+    border-color: var(--ColorSubtitulo);
 }
 
 .EncabezadoPrincipal {
@@ -54,7 +76,12 @@
     border-radius: 50%;
     overflow: hidden;
     border: 5px solid #8A2BE2;
-    box-shadow: 0 0 25px rgba(138, 43, 226, 0.5);
+    box-shadow: 0 0 25px var(--ColorBrillo), 0 18px 34px var(--ColorSombra);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ContenedorFoto:hover {
+    transform: translateY(-4px) scale(1.03);
 }
 
 .FotoPerfil {
@@ -77,6 +104,7 @@
     color: var(--ColorSubtitulo);
     margin: 10px 0 25px 0;
     letter-spacing: 4px;
+    text-shadow: 0 0 18px var(--ColorBrillo);
 }
 
 .TextoExtra {
@@ -130,20 +158,21 @@
     color: inherit;
     border-radius: 18px;
     padding: 35px;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 10px 24px var(--ColorSombra);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
 }
 
 .TarjetaEnlace:hover {
     transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+    box-shadow: 0 18px 36px var(--ColorSombra);
 }
 
-.card-github:hover { border-color: #6e5494; border-width: 5px; }
-.card-linkedin:hover { border-color: #0077b5; border-width: 5px; }
-.card-excel:hover { border-color: #1D6F42; border-width: 5px; }
-.card-twitter:hover { border-color: #1DA1F2; border-width: 5px; }
-.card-instagram:hover { border-color: #E4405F; border-width: 5px; }
-.card-mail:hover { border-color: #EA4335; border-width: 5px; }
+.card-github:hover { border-color: #6e5494; }
+.card-linkedin:hover { border-color: #0077b5; }
+.card-excel:hover { border-color: #1D6F42; }
+.card-twitter:hover { border-color: #1DA1F2; }
+.card-instagram:hover { border-color: #E4405F; }
+.card-mail:hover { border-color: #EA4335; }
 
 .CabeceraTarjeta {
     display: flex;
