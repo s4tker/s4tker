@@ -20,7 +20,7 @@
 
 ---
 
-## 🛠️ My Technical Arsenal
+## ⚙ My Technical Arsenal
 
 <p align="center">
   <img src="https://skillicons.dev/icons?i=py,flask,mysql,linux,js,html,css,git,github,vscode,pycharm&theme=dark" />
@@ -39,14 +39,14 @@
 
 ---
 
-## 📊 System Performance Metrics
+## ◵ System Performance Metrics
 <p align="center">
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=s4tker&theme=tokyonight" width="95%" />
 </p>
 
 ---
 
-## 🌃 Contribution Isometric View
+## ⌾ Contribution Isometric View
 <p align="center">
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=s4tker&theme=tokyonight" width="45%" />
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=s4tker&theme=tokyonight" width="45%" />
@@ -58,7 +58,7 @@
 
 ---
 
-## 🏆 Specialized Achievements
+## ✧ Specialized Achievements
 <p align="center">
   <a href="https://github.com/s4tker">
     <img src="https://github-profile-trophy.vercel.app/?username=s4tker&theme=tokyonight&column=4&margin-w=15&no-bg=true&no-frame=false" alt=" " />
@@ -71,7 +71,7 @@
 
 ---
 
-## 🐍 Evolution Script
+## ⛭ Evolution Script
 
 ```python
 class SoftwareEngineer:
@@ -87,4 +87,3 @@ class SoftwareEngineer:
 # Initializing progress...
 Me = SoftwareEngineer()
 print(Me.SolveProblem("The Future"))
-# s4tker
