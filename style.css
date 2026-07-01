@@ -284,7 +284,7 @@
 
 .card-github:hover { border-color: #6e5494; }
 .card-linkedin:hover { border-color: #0077b5; }
-.card-excel:hover { border-color: #1D6F42; }
+.card-telegram:hover { border-color: #229ED9; }
 .card-twitter:hover { border-color: #1DA1F2; }
 .card-instagram:hover { border-color: #E4405F; }
 .card-mail:hover { border-color: #EA4335; }
@@ -300,7 +300,7 @@
 
 .github-brand { color: #6e5494; }
 .linkedin-brand { color: #0077b5; }
-.excel-brand { color: #1D6F42; }
+.telegram-brand { color: #229ED9; }
 .twitter-brand { color: #1DA1F2; }
 .instagram-brand { color: #E4405F; }
 .mail-brand { color: #EA4335; }
