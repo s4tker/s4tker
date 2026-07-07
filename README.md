@@ -12,7 +12,7 @@
 
 <div align="center">
 
-| [**VISIT PORTFOLIO**](https://s4tker.github.io/s4tker/) |
+| [**👁 VISIT PORTFOLIO**](https://s4tker.github.io/s4tker/) |
 | :--- |
 | <br> <p align="center"> <a href="https://s4tker.github.io/s4tker/"> <img src="https://img.shields.io/badge/s4tker.github.io-000000?style=for-the-badge&logo=googlechrome&logoColor=BB86FC" /> </a> <a href="https://s4tker.github.io/s4tker/"> <img src="https://img.shields.io/badge/STATUS-ACTIVE-success?style=for-the-badge&logo=statuspage&logoColor=white" /> </a> </p> `Architecture` • `Innovation` • `Software Development` <br><br> |
 
@@ -20,7 +20,7 @@
 
 ---
 
-## ⚙ My Technical Arsenal
+## ⌬ My Technical Arsenal
 
 <p align="center">
   <img src="https://skillicons.dev/icons?i=py,flask,mysql,linux,js,html,css,git,github,vscode,pycharm&theme=dark" />
@@ -46,7 +46,7 @@
 
 ---
 
-## ⌾ Contribution Isometric View
+## ➥ Contribution Isometric View
 <p align="center">
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=s4tker&theme=tokyonight" width="45%" />
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=s4tker&theme=tokyonight" width="45%" />
